@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visit <%= name %>!</title>
+  <%- include('./partials/css-global'); %>
+  <link rel="stylesheet" href="css/single.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  
+  <!--This section contains the navigation bar which will be at the top of the page-->
+  <%- include('./partials/header-nav'); %>
+
+  <main class="large-images">
+    
+    <figure>
+      <img src="http://picsum.photos/id/<%= id %>/550/480" alt="<%= name %>">
+      <figcaption>Visit <%= tourIdea %> in <%= name %>!</figcaption>
+    </figure>
+    <h5><%= description %></h5>
+  </main>
+  <!--Footer will be below the page-->
+  <%- include('./partials/foot'); %>
+  
+</body>
+</html>

@@ -1,0 +1,112 @@
+/* Navigation styling and setup */
+.nav-wrap {
+  width: 100%;
+  position: -webkit-sticky;
+  top: 0;
+  background-color: rgb(112, 112, 202);
+}
+
+.navbar {
+  display: flex;
+  height: 50px;
+  overflow: hidden;
+}
+
+/* make the unordered list a flexbox */
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+/* styling of navigation links */
+.nav-link a {
+  color: rgb(54, 42, 42);
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: grey;
+  transition: color 0.3s ease-out;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid rgb(110, 104, 104);
+  border-radius: 5px;
+}
+
+/* declare hover state for nav links */
+.nav-link a:hover {
+  background-image: linear-gradient(grey, rgb(104, 69, 69));
+}
+
+/* declare active state for nav links*/
+.nav-link a:active {
+  background-image: linear-gradient(lightblue, pink);
+}
+
+/* menu view */
+.menu-toggle .bar{
+  width: 30px;
+  height: 3px;
+  background-color: #3f3f3f;
+  margin: 5px auto;
+}
+
+/*hamburger menu*/
+.menu-toggle {
+  justify-self: end;
+  margin-right: 10px;
+  display: none;
+}
+
+/* declare hover state for hamburger menu */
+.menu-toggle:hover{
+  cursor: pointer;
+}
+
+/* Media Query for Portrait menu view */
+@media only screen and (max-width: 720px) {   
+
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: start;
+    top: 55px;
+    background-color: #fff;
+    width: 100%;
+    height: calc(100vh - 55px);
+    transform: translate(-101%);
+    text-align: center;
+    overflow: hidden;
+  }
+    
+  .navbar li {
+    padding: 10px;
+  }
+    
+  .navbar li a {
+    font-size: 1rem;
+  }
+
+  .menu-toggle, .bar {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+    
+  .portrait-nav {
+    transform: translate(0%)!important;
+  }
+}
+
+
+
+/* Style footer section */
+footer{
+  bottom: 0;
+  width: 100%;
+  font-weight: bolder;
+  margin: 0;
+  background: rgb(190, 201, 223);
+  text-align: center;
+  
+}

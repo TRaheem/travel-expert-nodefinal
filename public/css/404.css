@@ -1,0 +1,102 @@
+/* Author: Titilope Raheem
+   Date: 26th July 2020
+   Course module: CPRG-210-XM1 - Wed Application Development
+   Assignment 3 - Node Final*/
+
+/* Define height */
+body{
+  height: 100vh;
+}
+
+/* Navigation container styling and setup*/
+.head-wrap {
+  width: 100%;
+}
+  
+.nav-wrap {
+  position: sticky;
+}
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Company Title styling*/
+h3{
+  cursor: pointer;
+  margin-right: auto;
+}
+
+/* Company logo on navbar styling*/
+.navbar img {
+  height: 50px;
+  width: 100px;
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+/* declare current page state for nav links*/
+.current {
+  background-image: linear-gradient(rgb(64, 64, 190), purple);
+}  
+
+/*Style 404 body page and give background*/
+.pagebody{
+  width: 100%;
+  height: 88vh;
+  margin: 0;
+  background-image: url(https://picsum.photos/id/279/200/300);
+  background-size: cover;
+  background-position: center;
+}
+
+/* display content in column form*/
+.page-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* style the header 1*/
+h1{
+  font-weight: bolder;
+  font-size: 4em;
+  padding: 30px;
+}
+
+/* style paragraph*/
+p{
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-size: 2em;
+}
+
+/* style link to return to home page*/
+.pagebody a{
+  font-size: 1em;
+  font-weight:bolder;
+  padding: 10px;
+  color: rgb(138, 21, 21);
+  border: 2px solid black;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  background-color: rgb(68, 89, 145);
+}
+
+/* declare hover and active states for link*/
+.pagebody a:hover, .pagebody a:active{
+  background-image: linear-gradient(white, black);
+  color: #000;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+.footer{
+  position: sticky;
+}
+
+
+
+

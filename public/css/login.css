@@ -1,0 +1,101 @@
+/* Author: Titilope Raheem
+   Date: 26th July 2020
+   Course module: CPRG-210-XM1 - Wed Application Development
+   Assignment 3 - Node Final*/
+
+/* Define height */
+body{
+  height: 100vh;
+}
+
+/* Navigation container styling and setup*/
+.head-wrap {
+  width: 100%;
+}
+  
+.nav-wrap {
+  position: sticky;
+}
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Company Title styling*/
+h3{
+  cursor: pointer;
+  margin-right: auto;
+}
+
+/* Company logo on navbar styling*/
+.navbar img {
+  height: 50px;
+  width: 100px;
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+/* declare current page state for nav links*/
+.current {
+  background-image: linear-gradient(rgb(64, 64, 190), purple);
+}  
+  
+/*Style login form and give background*/
+.form{
+  width: 100%;
+  height: 88vh;
+  margin: 0;
+  background-image: url(https://picsum.photos/id/279/200/300);
+  background-size: cover;
+  background-position: center;
+}
+
+#login{
+  background: #b895b9;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 45px;
+  text-align: center;
+}
+
+#login input{
+  font-family: sans-serif;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+/* add a red asterisk to show user it is required*/
+label.required ::after{
+  content: '*';
+  color: red;
+}
+
+/* red outline when invalid */
+input:invalid{
+  border: solid red;
+}
+
+/* style login button */
+#login button{
+  font-family: sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #d1b2b2;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+/* declare hover state for login button */
+#login button:hover{
+  background-image: linear-gradient(white, black);
+}  
