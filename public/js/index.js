@@ -1,6 +1,6 @@
 
-     fetch('http://localhost:3000/api/images')
-     //fetch('https://sheltered-retreat-17468.herokuapp.com/api/images')
+     //fetch('http://localhost:3000/api/images')
+     fetch('https://dry-bayou-50613.herokuapp.com/api/images')
      .then(function(response) {
        return response.json();
      })

@@ -79,8 +79,8 @@ app.get('/:id', function(request, response){
   Image.findOne({'id': request.params.id}, function(error, destination) {
   
     // Check for IDs that are not in our list
-      if (!destination) {
-      return response.send('Invalid ID.');
+     if (!destination) {
+     return response.render('404-page', {});
     }
 
     // Compile view and respond

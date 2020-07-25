@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Experts Agency - Invalid page</title>
+  <link rel="stylesheet" href="css/404.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/utility.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  
+  <!--This section contains the navigation bar which will be at the top of the page-->
+  <%- include('./partials/header-nav'); %>
+
+  <main>
+      <div class="pagebody">
+        <div class= page-content>
+          <h1>404: ERROR</h1>
+          <p>oops! page does not exist</p>
+          <a href="/">Back to Home Page</a>
+        </div>
+      </div>
+  </main>
+
+  <!--Footer will be below the page-->
+  <%- include('./partials/foot'); %>
+
+  <!--This contains the javascript for hamburger menu-->
+  <%- include('./partials/gallery-js'); %>
+</body>
+</html>
