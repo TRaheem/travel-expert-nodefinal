@@ -1,9 +1,19 @@
 CPRG210 - WEB APPLICATION DEVELOPMENT
-ASSIGNMENT 2 - STATIC "TRAVEL EXPERT" AGENCY WEBSITE (WEBSITE ENHANCEMENT)
+ASSIGNMENT 3 - NODE FINAL
 
-The aim of this project is to enhance the travel expert website already done in assignment with array for each loop (for gallery images) and make register/login forms updated based on html5. The hamburger menu should also be used for the navigation bars and made to toggle.
+The aim of this project is to deploy my most current version of Travel Exerts website using Express, EJS and Mongoose.It has a database driven gallery that is deployed to Heroku and MongoDB Atlas
 
-This was done with HTML, css and javascript. 
+Project dependencies used (as seen in the package.json file) are:
+Express
+EJS
+dotenv
+cors
+moments
+mongoose - mongoose connection was also authenticated using .env file.
+
+A custom 404 page was created (404-page.ejs) and will show up when a file or endpoint cannot be found.
+
+Static assets are served from 'public' folder
 
 Pictures were taken from: Lorem picsum website and google image gallery.
 Other refernces used in learning/debugging and clarifying:
