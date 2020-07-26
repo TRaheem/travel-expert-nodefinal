@@ -1,3 +1,4 @@
+<!--This is a partials for navigation bar for all pages except the home page-->
 <header class="head-wrap">
   <div class="nav-wrap">
     <nav class="navbar">
@@ -15,11 +16,27 @@
 
       <!--Navigation links-->
       <ul class="nav no">
-        <li class="nav-link"><a href="/">Home</a></li>
-        <li class="nav-link"><a href="/#Destinations">Destinations</a></li>
-        <li class="nav-link"><a href="/#contact">Contact Us</a></li>
-        <li class="nav-link"><a href="/login.html">Login</a></li>
-        <li class="nav-link"><a href="/register.html">Register</a></li>
+        <li class="nav-link">
+          <a href="/">Home</a>
+        </li>
+
+        <!--A current state is used in this partial to make the active link current-->
+        <li class="nav-link">
+          <a <%if (current=="destination")
+          {%>class="current"<%}%> href="/destination.html">destination</a>
+        </li>
+        <li class="nav-link">
+          <a <%if (current=="contact")
+          {%>class="current"<%}%> href="/contact.html">Contact Us</a>
+        </li>
+        <li class="nav-link">
+          <a <%if (current=="login")
+          {%>class="current"<%}%> href="/login.html">Login</a>
+        </li>
+        <li class="nav-link">
+          <a <%if (current=="register")
+          {%>class="current"<%}%> href="/register.html">Register</a>
+        </li>
       </ul>
     </nav>
   </div>
