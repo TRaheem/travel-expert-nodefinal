@@ -1,4 +1,5 @@
 // Description of all single destinations defined as const for better readability. source - Google search//
+
 // Peru description for South America large image//
 const peru = "Peru is a country in South America that is home to a section of Amazon rainforest and Machu Picchu, an ancient Incan city high in the Andes mountains. The region around Machu Picchu, including the Sacred Valley, Inca Trail and colonial city of Cusco, is rich in archaeological sites."
 
