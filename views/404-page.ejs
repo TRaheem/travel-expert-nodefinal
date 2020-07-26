@@ -2,24 +2,26 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel Experts Agency - Invalid page</title>
+  <%- include('./partials/head'); %> 
+  <title>Invalid page</title>
   <%- include('./partials/css-global'); %>
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/404.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
   
   <!--This section contains the navigation bar which will be at the top of the page-->
-  <%- include('./partials/header-nav'); %>
+  <%- include('./partials/header-nav', {current:""}); %>
 
+  <!--This is the main section containing the custom 404 page-->
   <main>
       <div class="pagebody">
         <div class= page-content>
           <h1>404: ERROR</h1>
           <p>oops! page does not exist</p>
+
+          <!--This link can be clicked by the user to return to the home page-->
           <a href="/">Back to Home Page</a>
         </div>
       </div>
