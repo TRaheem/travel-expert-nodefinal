@@ -6,6 +6,7 @@
   background-color: rgb(112, 112, 202);
 }
 
+/* navbar flex declaration */
 .navbar {
   display: flex;
   height: 50px;
@@ -20,16 +21,19 @@
 
 /* styling of navigation links */
 .nav-link a {
-  color: rgb(54, 42, 42);
   font-size: 1.2rem;
   font-weight: 400;
+  
   text-decoration: none;
-  background-color: grey;
-  transition: color 0.3s ease-out;
   padding: 5px;
   margin: 5px;
+  color: rgb(54, 42, 42);
+
   border: 1px solid rgb(110, 104, 104);
   border-radius: 5px;
+  
+  background-color: grey;
+  transition: color 0.3s ease-out;
 }
 
 /* declare hover state for nav links */
@@ -37,7 +41,7 @@
   background-image: linear-gradient(grey, rgb(104, 69, 69));
 }
 
-/* declare active state for nav links*/
+/* declare active state for nav links */
 .nav-link a:active {
   background-image: linear-gradient(lightblue, pink);
 }
@@ -62,18 +66,27 @@
   cursor: pointer;
 }
 
+/* declare current page state for nav links*/
+.current {
+  background-image: linear-gradient(rgb(64, 64, 190), rgb(126, 20, 20));
+}
+
 /* Media Query for Portrait menu view */
 @media only screen and (max-width: 720px) {   
 
+  /*give unordered list flex properties */
   .navbar ul {
     display: flex;
     flex-direction: column;
     position: fixed;
     justify-content: start;
+
     top: 55px;
     background-color: #fff;
+
     width: 100%;
     height: calc(100vh - 55px);
+
     transform: translate(-101%);
     text-align: center;
     overflow: hidden;
@@ -108,5 +121,4 @@ footer{
   margin: 0;
   background: rgb(190, 201, 223);
   text-align: center;
-  
 }

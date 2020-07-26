@@ -1,59 +1,42 @@
-body{
-  height: 100%;
-}
+/* This css is for the destination-single page where the larger single images are displayed */
 
-/* Navigation container styling and setup*/
-.head-wrap {
-  width: 100%;
-}
-  
-.nav-wrap {
-  position: sticky;
-}
-
-.navbar {
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* Company Title styling*/
-h3{
-  cursor: pointer;
-  margin-right: auto;
-}
-
-/* Company logo on navbar styling*/
-.navbar img {
-  height: 50px;
-  width: 100px;
-  justify-self: start;
-  margin-left: 20px;
-  cursor: pointer;
-}
-
-/* declare current page state for nav links*/
-.current {
-  background-image: linear-gradient(rgb(64, 64, 190), purple);
-}  
-
+/* let the main part display as a flex and properties attibuted */
 .large-images {
   display: flex;
   justify-content: center;
   align-items: center;
+
   margin-top: 5px;
 }
 
+/* description of each large image given border and styled */
 h5{
   border: 1px solid black;
   border-radius: 10px;
   border-style: dotted;
+
   text-align: center;
   width: 200px;
   margin: 20px;
   font-size: 1rem;
-  
-  
 }
-.footer{
-  position: sticky;
+
+/* Media Query for mobile menu view*/
+@media only screen and (max-width: 720px) {   
+
+  /* adjust flex direction */
+  .large-images{
+    flex-direction: column;
+  }
+
+  /* increase width of image description */
+  h5{
+    width: 420px;
+  }
+
+  /* reduce image size */
+  .large-images img{
+    height: 300px;
+    width: 420px;
+  }
 }
