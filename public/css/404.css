@@ -1,87 +1,56 @@
 /* Author: Titilope Raheem
    Date: 26th July 2020
-   Course module: CPRG-210-XM1 - Wed Application Development
-   Assignment 3 - Node Final*/
+   Course module: CPRG-210-XM1 - Web Application Development
+   Assignment 3 - Node Final */
 
-/* Define height */
-body{
-  height: 100vh;
-}
-
-/* Navigation container styling and setup*/
-.head-wrap {
-  width: 100%;
-}
-  
-.nav-wrap {
-  position: sticky;
-}
-
-.navbar {
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* Company Title styling*/
-h3{
-  cursor: pointer;
-  margin-right: auto;
-}
-
-/* Company logo on navbar styling*/
-.navbar img {
-  height: 50px;
-  width: 100px;
-  justify-self: start;
-  margin-left: 20px;
-  cursor: pointer;
-}
-
-/* declare current page state for nav links*/
-.current {
-  background-image: linear-gradient(rgb(64, 64, 190), purple);
-}  
-
-/*Style 404 body page and give background*/
+/* Style 404 body page and give it a background */
 .pagebody{
   width: 100%;
   height: 88vh;
   margin: 0;
+
+  /* background of 404 page */
   background-image: url(https://picsum.photos/id/279/200/300);
   background-size: cover;
   background-position: center;
 }
 
-/* display content in column form*/
+/* display content in column form using flex */
 .page-content{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* style the header 1*/
+/* style the header 1 and give it padding */
 h1{
   font-weight: bolder;
   font-size: 4em;
   padding: 30px;
 }
 
-/* style paragraph*/
+/* style paragraph text */
 p{
   font-weight: bold;
   padding-bottom: 20px;
   font-size: 2em;
 }
 
-/* style link to return to home page*/
+/* style link to return to home page */
 .pagebody a{
   font-size: 1em;
   font-weight:bolder;
   padding: 10px;
   color: rgb(138, 21, 21);
+
+  /* give it a border and border radius */
   border: 2px solid black;
   border-radius: 10px;
+
+  /* remove link underline */
   text-decoration: none;
+
+  /* background and transition */
   transition: background-color 0.2s ease-out, color 0.2s ease-out;
   background-color: rgb(68, 89, 145);
 }
@@ -91,10 +60,6 @@ p{
   background-image: linear-gradient(white, black);
   color: #000;
   transition: background-color 0.3s ease-in, color 0.3s ease-in;
-}
-
-.footer{
-  position: sticky;
 }
 
 

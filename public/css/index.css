@@ -1,19 +1,19 @@
 /* Author: Titilope Raheem
    Date: 26th July 2020
-   Course module: CPRG-210-XM1 - Wed Application Development
+   Course module: CPRG-210-XM1 - Web Application Development
    Assignment 3 - Node Final*/
 
-/* Navigation styling and setup*/
+/* Navigation styling and setup */
 .navbar {
   justify-content: end;
 }
  
-/* make the unordered list a flexbox */
+/* align the unordered list in the flexbox */
 .navbar ul {
   align-items: center;
 }
  
-/* Media Query for portrait menu view*/
+/* Media Query for mobile view */
 @media only screen and (max-width: 720px) {   
 
   .nav{
@@ -31,7 +31,7 @@
    
 }
 
-/* The hero image */
+/* styling the hero section */
 .hero-section {
   background-image: url("https://picsum.photos/id/1051/200/300");
 
@@ -55,14 +55,16 @@
   color: rgb(53, 46, 46);
 }
 
+/* style h1 text accordingly */
 h1{
   font-size: 3em;
-  font-weight: bolder;
-  margin-bottom: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
+/* style paragraph text in hero-section accordingly */
 p{
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 25px;
 }
@@ -70,25 +72,37 @@ p{
 /* stlye companylogo layout*/
 .companylogo{
   width: 150px;
-  height: 110px;
-  cursor: pointer;
-  margin: 0;
+  height: 100px;
   padding: 5px;
+
+  /* give company logo a cursor state */
+  cursor: pointer;
+
+  /* give company logo appropriate margin */
+  margin: 0; 
 }
 
-/* add a color to a word on the h1 text*/
+/* add a color to a word on the h1 text and the current year on the footer */
 span{
   color: rgb(105, 69, 48);
 }
 
-/* Style website goal - sign up here*/
+/* Style the website goal (button) - sign up here*/
 .web-goal{
   width:150px;
   font-weight:bold;
   padding: 10px;
+
+  /* give the text a distinct color */
   color: rgb(212, 35, 35);
+
+  /* give the button a border */
   border: 2px solid black;
+
+  /* remove underline from the link */
   text-decoration: none;
+
+  /* give button a distinct background */
   transition: background-color 0.2s ease-out, color 0.2s ease-out;
   background-color: rgb(58, 82, 148);
 }
@@ -101,13 +115,12 @@ span{
 }
 
 /* destination header styling and background color*/
-#Destinations h2{
+#destination h2{
   text-align: center;
-  margin-top: 30px;
   font-family: "source sans pro", sans-serif;
-  background-color: rgb(112, 112, 202);
-  padding: 15px;
+  padding: 8px;
   font-weight: bolder;
+  text-decoration: underline;
 }
 
 /* make gallery a flexbox*/
@@ -120,7 +133,7 @@ span{
 /* gallery image styling*/
 .gallery img{
   transition: 1s;
-  padding: 15px;
+  padding: 8px;
 }
 
 /* declare hover state*/
@@ -144,6 +157,7 @@ span{
   font-family: "source sans pro", sans-serif;
 }
 
+/* style contact form title (h2 and h4) text */
 #contact h2{
   text-align: start;
   font-size: 1.7em;
@@ -171,22 +185,29 @@ label.required ::after{
 #information select,
 #information textarea {
   width: 95%;
-  border: 1px solid lightblue;
-  border-radius: 5px;
-  background: rgb(248, 246, 246);
   margin-bottom: 16px;
   padding: 20px;
+
+  /* give the input fields a border */
+  border: 1px solid lightblue;
+  border-radius: 5px;
+
+  /* give input fields a background */
+  background: rgb(248, 246, 246);
+  
 }
 
-/* style submit button*/
+/* style contact form submit button */
 #information button[type="submit"] {
-  cursor: pointer;
-  width: 30%;
-  background: #84468a;
-  color: white;
   margin-top: 10px;
   padding: 10px;
+  width: 30%;
+
+  /* give background  and border*/
+  background: #84468a;
+  color: white;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 p{
