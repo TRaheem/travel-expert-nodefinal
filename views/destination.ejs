@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('./partials/head'); %> 
+  <title>Travel Destinations</title>
+  <%- include('./partials/css-global'); %>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  
+  <header>
+    <!--This section contains the navigation bar which will be at the top of the page-->
+    <%- include('./partials/header-nav', {current:"destination"}); %>
+  </header> 
+
+  <main>
+  <!--This is the Gallery containing images for different destinations. The For each loop is used below-->
+  <div id="destination">
+    <h2>Destination Gallery For Tourism</h2>
+  </div>
+  <div class="gallery"></div>
+  </main>
+
+<!--Footer will be below the page-->
+<%- include('./partials/foot'); %>
+
+<!--This contains the javascript for hamburger menu and image gallery array for each loop-->
+<%- include('./partials/gallery-js'); %>
+</body>
+</html>
